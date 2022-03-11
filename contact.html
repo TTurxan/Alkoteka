@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+</head>
+
+<body>
+    <nav id="nav">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="img/logo4.png" alt="">
+                        </div>
+                        <span>Alkoteka</span>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="navbar">
+                        <ul>
+                            <li><a href="index.html">Ana səhİfə</a></li>
+                            <li><a href="about.html">Haqqımızda</a></li>
+                            <li><a href="products.html">İçkİlər</a></li>
+                            <li><a class="active" href="contact.html">Əlaq</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="drinks2">
+        <div class="background"></div>
+        <div class="text">
+            <div class="links">
+                <p>
+                    <a href="index.html">Ana səhifə<i class="fas fa-angle-right"></i></a>
+                    <a href="contact.html"> Əlaqə<i class="fas fa-angle-right"></i></a>
+                </p>
+                <h1>
+                    <span> ƏLAQƏ</span>
+                </h1>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-3">
+                    <div class="address">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="text">
+                            <p><span>Ünvan:</span> Bakı, Zığ şossesi 19</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="address">
+                        <div class="icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <p><span>Nömrə:</span><a href="tel://+944556093984">+944556093984</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="address">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="text">
+                            <p><span>E-mail:</span> <a href=" info@yoursite.com"> info@yoursite.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="address">
+                        <div class="icon">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <div class="text">
+                            <p><span>Web sayt:</span> Alkotek.az</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.895614131573!2d49.94070751539448!3d40.36683887937088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307b5572044acd%3A0x1898186f516762bc!2s19%20Zigh%20Hwy%2C%20Baku!5e0!3m2!1sen!2s!4v1646594057357!5m2!1sen!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-md-7">
+                    <div class="contact-wrap">
+                        <h3 class="mb-4">Bizimlə əlaqə saxlayın</h3>
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">Adınız</label>
+                                        <input type="text" id="name" class="form-control" placeholder="Adınız">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email">E-poçt ünvanı</label>
+                                        <input type="email" id="email" name="email" class="form-control"
+                                            placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="subject">Mövzü</label>
+                                        <input type="text" id="subject" class="form-control" placeholder="Mövzü">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="Mesajınız">Mesajınız</label>
+                                        <textarea name="message" class="form-control" id="message" cols="30" rows="4"
+                                            placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="submit" value="mesaj göndərin" class="btn btn-primary">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="head-tittle">
+                                <a href="#">
+                                    <h3>Alkoteka</h3>
+                                </a>
+                            </div>
+                            <span>Far far away, behind the word mountains, far from the countries.</span>
+                            <div class="contacts">
+                                <a href="#"> <i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box">
+                                <h4>Hesablarım</h4>
+                                <ul>
+                                    <li><i class="fas fa-angle-right"></i>Mənim Hesabım</li>
+                                    <li><i class="fas fa-angle-right"></i>Qeydiyyatdan keçin</li>
+                                    <li><i class="fas fa-angle-right"></i>Daxil ol</li>
+                                    <li><i class="fas fa-angle-right"></i>Mənim sifarişim</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box">
+                                <h4>Məlumat</h4>
+                                <ul>
+                                    <li><i class="fas fa-angle-right"></i> <a href="Haqqımızda.html">Bizim
+                                            haqqımızda</a></li>
+                                    <li><i class="fas fa-angle-right"></i><a href="Kataloq.html">Kataloq</a></li>
+                                    <li><i class="fas fa-angle-right"></i><a href="contact.html">Bizimlə əlaqə
+                                            saxlayın</a></li>
+                                    <li><i class="fas fa-angle-right"></i><a href="index.html">Müddət və Şərtlər</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box">
+                        <h4>Sualınız var?</h4>
+                        <div class="map">
+                            <i class="fas fa-map"></i>
+                            <p> 203 Fake St. Mountain View, San Francisco, California, USA</p>
+                        </div>
+                        <div class="phone">
+                            <i class="fas fa-phone"></i>
+                            <p>+994513361551</p>
+                        </div>
+                        <div class="instagram">
+                            <i class="fab fa-instagram"></i>
+                            <a href="https://instagram.com/alkotekaz?utm_medium=copy_link" target="_blank"><p>alkotekaz</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+
+
+    <script>
+        function sendMsg(e) {
+            e.preventDefault()
+            const email = document.querySelector("#email"),
+            subject = document.querySelector("#subject"),
+            message = document.querySelector("#message"),
+            contactForm = document.querySelector("#contactForm")
+
+            Email.send({
+                SecureToken : "b0af4b0f-0434-470d-9cfb-e8a0c054517b",
+                To : 'turxan.tomayev2003@gmail.com',
+                From : email.value,
+                Subject : subject.value,
+                Body : message.value
+            }).then(
+            message => alert(message)
+            );
+        }
+
+        console.log(email.value, subject.value, message.value)
+
+        contactForm.addEventListener('submit', sendMsg)
+    </script>
+</body>
+
+</html>
