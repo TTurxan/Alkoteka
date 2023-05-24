@@ -30,15 +30,32 @@
                 right: -10px
                 bottom: -10px
                 content: ''
-                border: 1px solid #499406
+                border: 1px solid #ffc335
                 z-index: -1
                 border-radius: 50%
                 transition: .6s
     .slick-next,.slick-prev
-        background-color: #499406
+        background-color: #ffc335
         border-radius: 50%
         color: white
     .slick-prev
         left: -1%
     .slick-next
         right: -1%
+@media screen and ( max-width: 576px)
+    #species
+        .slick-next, .slick-prev
+            display: none!important
+
+@media (min-width: 576px) and (max-width: 762px)
+    #species
+        .slick-next
+            right: -8%
+        .slick-prev
+            left: -8%
+@media (min-width: 762px) and (max-width: 976px)
+    #species
+        .slick-next
+            right: 4%
+        .slick-prev
+            left: 4%

@@ -1,69 +1,14 @@
-#drinks2
-    width: 100%
-    height: 50vh !important
-    background-image: url(https://images8.alphacoders.com/291/291465.jpg)
-    position: relative
-    background-size: 100%
-    background-position: center
-    background-attachment: fixed
-    .background
-        position: absolute
-        top: 0
-        left: 0
-        right: 0
-        bottom: 0
-        content: ''
-        opacity: 0.5
-        background: #000000
-    .text
-        width: 100%
-        height: 75vh
-        display: flex
-        justify-content: center
-        align-items: center
-        text-align: center
-        .links
-            p
-                margin-bottom: 20px
-                text-transform: uppercase
-                font-weight: 500
-                transform: rotate(360deg)
-                a
-                    color: rgba(255, 255, 255, 0.7)
-                    margin-right: 10px
-                    &:hover
-                        color: #499406
-                        text-decoration: none
-                        transition: .4s
-                li
-                    color: rgba(255, 255, 255, 0.7)
-                    display: block
-            h1
-                font-size: 80px
-                color: #fff
-                line-height: 1.1
-                font-weight: 700
-                font-style: italic
-                color: transparent
-                -webkit-text-fill-color: transparent
-                -webkit-text-stroke-width: 0.5px
-                -webkit-text-stroke-color: #fff
-                transform: rotate(360deg)
-            span
-                font-size: 80px
-                -webkit-text-fill-color: #fff
-                -webkit-text-stroke-width: 0px
 #contact
-    background-color: #f5f4f0
+    background-color: #fff
     padding-top: 70px
-    margin-bottom: 0
+    margin-bottom: 20
     .address
         text-align: center
         .icon
             width: 100px
             height: 100px
             border-radius: 50%
-            background: #499406
+            background: #ffc335
             margin: 0 auto
             margin-bottom: 20px
             display: flex
@@ -80,15 +25,18 @@
             p
                 font-weight: 400
                 color: gray
+            a
+                text-decoration: none
+                color: #ffc335
     iframe
         width: 100%
     .contact-wrap
         padding: 3rem
-        background-color: #fff
+        background-color: #ffc335
         .form-group
             margin-bottom: 1rem
             label
-                color: #499406
+                color: #ffc335
                 text-transform: uppercase
                 font-size: 13px
                 font-weight: 600
@@ -106,5 +54,20 @@
             textarea
                 height: inherit!important
             .btn
-                background: #499406
-                border: none   
+                background: black
+                border: none
+@media screen and ( max-width: 576px)
+    #contact
+        .contact-wrap
+            padding: 1rem
+        iframe
+            width: 100%
+            height: 200px
+            margin-bottom: 20px
+@media (min-width: 576px) and (max-width: 762px)
+    #contact
+        padding-bottom: 50px
+
+@media (min-width: 762px) and (max-width: 976px)
+    #contact
+        padding-bottom: 50px

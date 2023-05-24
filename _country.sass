@@ -1,0 +1,61 @@
+#country
+    .imgbox
+        height: 350px
+        position: relative
+        z-index: 0
+        background-size: cover
+        transition: all 0.5s ease
+        border-radius: 5px
+        img
+            height: 350px
+        &:hover
+            .overlay-head
+                height: 100%
+        .overlay-head
+            position: absolute
+            bottom: 0
+            left: 0
+            right: 0
+            width: 100%
+            height: 0
+            overflow: hidden
+            transition: .5s ease
+            &:hover
+                height: 100%
+    .head-tittle
+        span
+            font-size: 18px
+            display: inline-block
+            margin-bottom: 0
+            color: #ffc335
+            font-size: 16px
+            font-weight: 400
+            font-style: italic
+            position: relative
+        h2
+            font-size: 40px
+            font-weight: 700
+    .textbox
+        position: relative
+        padding: 20px
+        text-align: center
+        p
+            font-size: 12px
+        h2
+            font-size: 22px
+            text-transform: capitalize
+            font-weight: 400
+    .category
+        font-style: italic
+        color: #ffc335
+    .all-products
+        a
+            width: 100%
+            background: #ffc335
+            border: 1px solid #ffc335
+            color: #fff
+@media screen and ( max-width: 576px)
+    #tastefully
+        .head-tittle
+            h2
+                font-size: 30px

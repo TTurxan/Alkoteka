@@ -23,28 +23,37 @@
 // }
 // })
 
+const email = document.querySelector("#email");
+const subject = document.querySelector("#subject");
+const message = document.querySelector("#message");
+const submit = document.querySelector("#submit");
 
-var nodemailer = require('nodemailer');
+submit.addEventListener("click", function (e) {
+  alert("dqw");
+  e.preventDefault();
+ 
+  var nodemailer = require("nodemailer");
+  var transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: "turxan.tomayev2003@gmail.com",
+      pass: "05.05.2003.",
+    },
+  });
+  var mailOptions = {
+    from: "turxan.tomayev2003@gmail.com",
+    to: email.value,
+    subject: subject.value,
+    text: message.value,
+  };
+  console.log(email.value);
 
-var transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: 'turxan.tomayev2003@gmail.com',
-    pass: '05.05.2003.'
-  }
-});
-
-var mailOptions = {
-  from: 'turxan.tomayev2003@gmail.com',
-  to: 'ilkin944@gmail.com',
-  subject: 'Sending Email using Node.js',
-  text: 'That was easy!'
-};
-
-transporter.sendMail(mailOptions, function(error, info){
-  if (error) {
-    console.log(error);
-  } else {
-    console.log('Email sent: ' + info.response);
-  }
+  transporter.sendMail(mailOptions, function (error, info) {
+    if (error) {
+      console.log(error);
+    } else {
+      console.log("Email sent: " + info.response);
+      alert("ugurla gonderildi");
+    }
+  });
 });

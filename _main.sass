@@ -11,8 +11,6 @@
         font-weight: 300
     section
         margin-bottom: 70px
-    .container
-        max-width: 1260px!important
     a
         cursor: pointer
         &:hover
@@ -33,12 +31,16 @@
         background-repeat: no-repeat
         background-position: center center
     .sticky
-        background-color: #499406!important
+        background-color: black!important
         transition: .3s all ease-out
         a
             color: white!important
         span
             color: white!important
+    .active
+        color: #ffc335 !important
+    .show
+        display: block    
     .overlay
         position: absolute
         top: 0
@@ -46,5 +48,8 @@
         right: 0
         bottom: 0
         content: ''
-        opacity: 0.5
+        opacity: .5
         background: #000000
+    #nav-hamburger
+        display: none
+

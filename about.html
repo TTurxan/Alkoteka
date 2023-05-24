@@ -20,26 +20,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="aos-by-red.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
     <nav id="nav">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center p-3">
                 <div class="col-md-3">
                     <div class="box">
                         <div class="imgbox">
-                            <img src="img/logo4.png" alt="">
+                            <img src="" alt="">
                         </div>
-                        <span>Alkoteka</span>
+                        <a href="index.html"> <span>Grist</span></a>
                     </div>
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-9 ">
                     <div class="navbar">
                         <ul>
-                            <li><a  href="index.html">Ana səhİfə</a></li>
+                            <li><a href="index.html">Ana səhİfə</a></li>
                             <li><a class="active" href="about.html">Haqqımızda</a></li>
-                            <li><a href="products.html">İçkİlər</a></li>
+                            <li><a href="products.html">Təbii sərvətlərimiz</a></li>
                             <li><a href="contact.html">Əlaqə</a></li>
                         </ul>
                     </div>
@@ -47,10 +49,37 @@
             </div>
         </div>
     </nav>
-    <section id="drinks2">
+    <nav id="nav-hamburger" class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a href="index.html" class="navbar-brand"> <span>Grist</span></a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Ana səhİfə</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">Haqqımızda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Təbii sərvətlərimiz</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contaact.html">Əlaqə</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="products2">
         <div class="background"></div>
         <div class="text">
-            <div class="links">
+            <div class="links" data-aos="fade-up" data-aos-duration="1000">
                 <p>
                     <a href="index.html">Ana səhifə<i class="fas fa-angle-right"></i></a>
                     <a href="contact.html"> Haqqımızda<i class="fas fa-angle-right"></i></a>
@@ -61,25 +90,24 @@
             </div>
         </div>
     </section>
-    <section id="wine-about">
+    <section id="grist-about">
         <div class="container">
             <div class="row">
                 <div class="col-md-7">
                     <div class="imgbox">
-                        <img src="https://www.errandpro.eu/wp-content/uploads/2020/02/wine-bottle.jpg" alt="">
+                        <img src="img/gold.jpeg">
                     </div>
                 </div>
                 <div class="col-md-5">
-                    <div class="text">
-                        <span>1915 ci ildən bəri</span>
-                        <h2>Şərab haqqında qısa məlumat</h2>
-                        <p>Bütün şərab həvəskarları eyni şəkildə başlayır. Şərab dadmaq kimi sadə hərəkət bizi
-                            təsirləndirir. Həmin şərabda diqqətimizi çəkən bir şey var. Bu, ətirlər, damağınızdakı
-                            tekstura və ya sadəcə zamanla donmuş an ola bilər ki, sizi bu təcrübəni təkrarlamaq istəyib
-                            yaradır.</p>
-                        <p>Vaxt keçdikcə üfüqləriniz genişlənməyə davam edir və marağınızı doyurmaq və digər bölgələrdən
-                            və ya ölkələrdən gələn şərabları sınamağa başlamaq üçün budaqlarınız genişlənir.</p>
-                        <h3>Biznesdə <p>15</p> İllik Təcrübə</h3>
+                    <div class="text" data-aos="fade-up" data-aos-duration="1000">
+                        <span>Əsrlər boyu</span>
+                        <h2>Təbii sərvətlər haqqında qısa məlumat</h2>
+                        <p>Təbii sərvətlər - bəşəriyyətin varlığı üçün zəruri olan və təsərrüfatda istifadə olunan
+                            təbiət elementləri.
+
+                            Azərbaycan çox qədim zamanlardan öz təbii sərvətləri ilə dünyanın diqqətini cəlb etmişdir.
+                            Ümumiliyyətlə təbii ehtiyat dedikdə insanların həyat və təsərrüfat fəaliyyətində istifadə
+                            etdiyi bütün təbiət komponentləri başa düşülür (bəzən təbii sərvət və ya resurs adlanır)</p>
                     </div>
                 </div>
             </div>
@@ -89,73 +117,312 @@
         <div class="container">
             <div class="row sliderone">
                 <div class="col-md-12">
-                    <div class="box">
-                        <div class="imgbox" style="background-image: url(img/brandy.jpg)">
+                    <div class="box" data-aos="fade-zoom" data-aos-duration="400">
+                        <div class="imgbox" style="background-image: url(img/gold-2.jpeg)">
                         </div>
-                        <h3>Brandy</h3>
+                        <h3>Qızıl</h3>
                     </div>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12" data-aos="fade-zoom" data-aos-duration="600">
                     <div class="box">
-                        <div class="imgbox" style="background-image: url(img/gin.jpg)">
+                        <div class="imgbox" style="background-image: url(img/neft.jpeg)">
                         </div>
-                        <h3>Gin</h3>
+                        <h3>Neft</h3>
                     </div>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12" data-aos="fade-zoom" data-aos-duration="800">
                     <div class="box">
-                        <div class="imgbox" style="background-image: url(img/rum.jpg)">
+                        <div class="imgbox" style="background-image: url(img/gumus.jpeg)">
                         </div>
-                        <h3>Rum</h3>
+                        <h3>Gümüş</h3>
                     </div>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12" data-aos="fade-zoom" data-aos-duration="1000">
                     <div class="box">
-                        <div class="imgbox" style="background-image: url(img/tequila.jpg)">
+                        <div class="imgbox" style="background-image: url(img/dəmir.jpeg)">
                         </div>
-                        <h3>Tequila</h3>
+                        <h3>Dəmir</h3>
                     </div>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12" data-aos="fade-zoom" data-aos-duration="1200">
                     <div class="box">
-                        <div class="imgbox" style="background-image: url(img/vodka.jpg)">
+                        <div class="imgbox" style="background-image: url(img/qaz1.jpeg)">
                         </div>
-                        <h3>Vodka</h3>
+                        <h3>Qaz</h3>
                     </div>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12" data-aos="fade-zoom" data-aos-duration="1400">
                     <div class="box">
-                        <div class="imgbox" style="background-image: url(img/whiskey.jpg)">
+                        <div class="imgbox" style="background-image: url(img/aliminium1.jpeg)">
                         </div>
-                        <h3> Whiskey</h3>
+                        <h3> Aliminium</h3>
                     </div>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12" data-aos="fade-zoom" data-aos-duration="1600">
                     <div class="box">
-                        <div class="imgbox" style="background-image: url(img/whiskey.jpg)">
+                        <div class="imgbox" style="background-image: url(img/komur.jpeg)">
                         </div>
-                        <h3> Whiskey</h3>
+                        <h3> Kömür</h3>
                     </div>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12" data-aos="fade-zoom" data-aos-duration="1800">
                     <div class="box">
-                        <div class="imgbox" style="background-image: url(img/whiskey.jpg)">
+                        <div class="imgbox" style="background-image: url(img/mis.jpeg)">
                         </div>
-                        <h3> Whiskey</h3>
+                        <h3>Mis</h3>
                     </div>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12" data-aos="fade-zoom" data-aos-duration="2000">
                     <div class="box">
-                        <div class="imgbox" style="background-image: url(img/whiskey.jpg)">
+                        <div class="imgbox" style="background-image: url(img/pambiq.jpeg)">
                         </div>
-                        <h3> Whiskey</h3>
+                        <h3> Pambıq </h3>
                     </div>
                 </div>
-                <div class="col-md-12">
-                    <div class="box">
-                        <div class="imgbox" style="background-image: url(img/whiskey.jpg)">
+            </div>
+        </div>
+    </section>
+    <section id="country">
+        <div class="container">
+            <div class="row text-center justify-content-center mb-5">
+                <div class="head-tittle">
+                    <span>Məhsulların ixracı</span>
+                    <h2>Xarici ölkələrə ixrac etdiyimiz məhsullar</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="400">
+                    <div class="imgbox" style="background-image: url(img/italian-flag.jpg);">
+                        <div class="overlay-head">
+                            <h1 class="text"><img src="./img/italy-neft.jpeg" alt=""></h1>
                         </div>
-                        <h3> Whiskey</h3>
+                    </div>
+                    <div class="textbox">
+                        <span class="category">Neft</span>
+                        <h2>İtaliya</h2>
+                        <p>Azərbaycanın İtaliyaya ixrac etdiyi təbii sərvətlərə ilkin növbədə xam neft və təbii qaz
+                            daxildir. Xam neft ixracın 6.17 milyard dollar ilə 64%-ni , təbii qaz isə 3.2 milyard dollar
+                            ilə 36%-ni təşkil edir</p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="600">
+                    <div class="imgbox" style="background-image: url(img/turkish-flag.jpg);">
+                        <div class="overlay-head">
+                            <h1 class="text"><img src="./img/ketan.jpg" alt=""></h1>
+                        </div>
+                    </div>
+                    <div class="textbox">
+                        <span class="category">Pambıq</span>
+                        <h2>Türkiyə</h2>
+                        <p>Azərbaycanın Türkiyəyə ixrac etidyi təbii sərvətlərə xam neft, neft qazı, xam pambıq,
+                            alüminium daxildir. Xam neft 332 mln dollar gəlir ilə ixracın 12%-ni, neft qazı 1.68 mlrd
+                            dollar ilə 60%-ni, xam pambıq 194 mln dollar ilə 6.85%-ni, alüminium isə 46,6 mln dollar ilə
+                            1.64%-ni təşkil edir
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800">
+                    <div class="imgbox" style="background-image: url(img/russian-flag.jpg);">
+                        <div class="overlay-head">
+                            <h1 class="text"><img src="./img/meyve-terevez.jpeg" alt=""></h1>
+                        </div>
+                    </div>
+                    <div class="textbox">
+                        <span class="category">Meyvə-Tərəvəz</span>
+                        <h2>Rusiya</h2>
+                        <p>Rusiyaya olan təbii sərvət ixracımızı neft, qaz və dəmir, aliminium və digər filizlər təşkil
+                            edir.</p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="imgbox" style="background-image: url(img/israel-flag.jpg);">
+                        <div class="overlay-head">
+                            <h1 class="text"><img src="./img/neft-israil.jpeg" alt=""></h1>
+                        </div>
+                    </div>
+                    <div class="textbox">
+                        <span class="category">Neft</span>
+                        <h2>İsrail</h2>
+                        <p>İsrael 900 milyon dollar ilə Azərbaycan neftinin əsas alıcılarındandır.</p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="imgbox" style="background-image: url(img/german-flag.png);">
+                        <div class="overlay-head">
+                            <h1 class="text"><img src="./img/cerez-almaniya.jpg" alt=""></h1>
+                        </div>
+                    </div>
+                    <div class="textbox">
+                        <span class="category">Çərəz</span>
+                        <h2>Almaniya</h2>
+                        <p>Azərbaycanın Almaniyaya ixrac etidyi təbii sərvətlərə xam neft və nikel qırıntıları daxildir.
+                            Xam neft 634 dollar gəlir ilə ixracın 96.1%-ni və nikel qırıntıları isə 507 min dollar ilə
+                            0.7%-ni təşkil edir</p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="1400">
+                    <div class="imgbox" style="background-image: url(img/croatia-flag.jpg)">
+                        <div class="overlay-head">
+                            <h1 class="text"><img src="./img/neft-xorvatiya.jpg" alt=""></h1>
+                        </div>
+                    </div>
+                    <div class="textbox">
+                        <span class="category">Neft</span>
+                        <h2>Xorvatiya</h2>
+                        <p>Azərbaycanın Xorvatiyaya ixrac etdiyi təbii sərvətlərə yalnız xam neft daxildir. Bu təbii
+                            sərvətin ixracının Azərbaycana gəliri isə 741 mln dollar təşkil edir.</p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="1600">
+                    <div class="imgbox" style="background-image: url(img/georgia-flag.jpg);">
+                        <div class="overlay-head">
+                            <h1 class="text"><img src="./img/enerjy-gurcustan.jpeg" alt=""></h1>
+                        </div>
+                    </div>
+                    <div class="textbox">
+                        <span class="category">Elektrik</span>
+                        <h2>Gürcüstan</h2>
+                        <p>Gürcüstana olan ixracatımızın əsası xam və emal olunmuş neft, təbii qaz, metal filizləri kimi
+                            məhsullar təşkil edir.</p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="1800">
+                    <div class="imgbox" style="background-image: url(img/indian-flag.jpg);">
+                        <div class="overlay-head">
+                            <h1 class="text"><img src="./img/filiz-hindistan.jpeg" alt=""></h1>
+                        </div>
+                    </div>
+                    <div class="textbox">
+                        <span class="category">Neft</span>
+                        <h2>Hindistan</h2>
+                        <p>Azərbaycan yarım milyard dollardan daha çox ixracat ilə Hindistanı xam neftlə təmin edən
+                            nəhəng partnyorudur.</p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center justify-content-center mt-5">
+                <div class="col-md-4">
+                    <div class="all-products">
+                        <a href="products.html" class="btn">Bütün Məhsullara Baxın <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="country">
+        <div class="container">
+            <div class="row text-center justify-content-center mb-5">
+                <div class="head-tittle">
+                    <span>Məhsulların ixracı</span>
+                    <h2>Xarici ölkələrə ixrac etdiyimiz məhsullar</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="400">
+                    <div class="imgbox" style="background-image: url(img/italian-flag.jpg);">
+                        <div class="overlay-head">
+                            <h1 class="text"><img src="./img/italy-neft.jpeg" alt=""></h1>
+                        </div>
+                    </div>
+                    <div class="textbox">
+                        <span class="category">Neft</span>
+                        <h2>İtaliya</h2>
+                        <p>Azərbaycanın İtaliyaya ixrac etdiyi təbii sərvətlərə ilkin növbədə xam neft və təbii qaz
+                            daxildir. Xam neft ixracın 6.17 milyard dollar ilə 64%-ni , təbii qaz isə 3.2 milyard dollar
+                            ilə 36%-ni təşkil edir</p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="600">
+                    <div class="imgbox" style="background-image: url(img/turkish-flag.jpg);">
+                        <div class="overlay-head">
+                            <h1 class="text"><img src="./img/ketan.jpg" alt=""></h1>
+                        </div>
+                    </div>
+                    <div class="textbox">
+                        <span class="category">Pambıq</span>
+                        <h2>Türkiyə</h2>
+                        <p><span class="price-sale">$69.00</span><span class="price">$49.00</span></p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800">
+                    <div class="imgbox" style="background-image: url(img/russian-flag.jpg);">
+                        <div class="overlay-head">
+                            <h1 class="text"><img src="./img/meyve-terevez.jpg" alt=""></h1>
+                        </div>
+                    </div>
+                    <div class="textbox">
+                        <span class="category">Meyvə-Tərəvəz</span>
+                        <h2>Rusiya</h2>
+                        <p><span class="price-sale">$69.00</span><span class="price">$49.00</span></p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="imgbox" style="background-image: url(img/israel-flag.jpg);">
+                        <div class="overlay-head">
+                            <h1 class="text"><img src="./img/neft-israil.jpeg" alt=""></h1>
+                        </div>
+                    </div>
+                    <div class="textbox">
+                        <span class="category">Neft</span>
+                        <h2>İsrail</h2>
+                        <p><span class="price-sale">$69.00</span><span class="price">$49.00</span></p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="imgbox" style="background-image: url(img/german-flag.png);">
+                        <div class="overlay-head">
+                            <h1 class="text"><img src="./img/cerez-almaniya.jpg" alt=""></h1>
+                        </div>
+                    </div>
+                    <div class="textbox">
+                        <span class="category">Çərəz</span>
+                        <h2>Almaniya</h2>
+                        <p><span class="price-sale">$69.00</span><span class="price">$49.00</span></p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="1400">
+                    <div class="imgbox" style="background-image: url(img/croatia-flag.jpg)">
+                        <div class="overlay-head">
+                            <h1 class="text"><img src="./img/neft-xorvatiya.jpg" alt=""></h1>
+                        </div>
+                    </div>
+                    <div class="textbox">
+                        <span class="category">Neft</span>
+                        <h2>Xorvatiya</h2>
+                        <p><span class="price-sale">$69.00</span><span class="price">$49.00</span></p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="1600">
+                    <div class="imgbox" style="background-image: url(img/georgia-flag.jpg);">
+                        <div class="overlay-head">
+                            <h1 class="text"><img src="./img/enerjy-gurcustan.jpeg" alt=""></h1>
+                        </div>
+                    </div>
+                    <div class="textbox">
+                        <span class="category">Elektrik</span>
+                        <h2>Gürcüstan</h2>
+                        <p><span class="price-sale">$69.00</span><span class="price">$49.00</span></p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="1800">
+                    <div class="imgbox" style="background-image: url(img/indian-flag.jpg);">
+                        <div class="overlay-head">
+                            <h1 class="text"><img src="./img/italy-neft.jpeg" alt=""></h1>
+                        </div>
+                    </div>
+                    <div class="textbox">
+                        <span class="category">Neft</span>
+                        <h2>Hindistan</h2>
+                        <p><span class="price-sale">$69.00</span><span class="price">$49.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center justify-content-center mt-5">
+                <div class="col-md-4">
+                    <div class="all-products">
+                        <a href="products.html" class="btn">Bütün Məhsullara Baxın <i
+                                class="fas fa-angle-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -165,125 +432,119 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="overlay"></div>
-                <div class="text">
+                <div class="text" data-aos="fade-up" data-aos-duration="1600">
                     <span class="subhead">Rəsmi rəy</span>
-                    <h2>Xoşbəxt Müştərilər</h2>
+                    <h2>Xarici Müştərilər</h2>
                 </div>
             </div>
-            <div class="row slidertwo">
-                <div class="col-md-4">
+            <div class="row slidertwo" data-aos="fade-up" data-aos-duration="1600">
+                <div class="col-md-4 col-12">
                     <div class="testiomanials">
                         <div class="icon">
                             <i class="fas fa-quote-left"></i>
                         </div>
                         <div class="text">
-                            <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and
-                                Consonantia, there live the blind texts.</p>
+                            <p class="mb-4">I gladly recommend it to everyone. The real address of quality.</p>
                         </div>
                         <div class="user">
                             <div class="profile imgbox"
-                                style="background-image: url(https://technext.github.io/liquorstore/images/person_1.jpg);">
+                                style="background-image: url(https://www.rd.com/wp-content/uploads/2017/09/01-shutterstock_476340928-Irina-Bg.jpg);">
 
                             </div>
                             <div class="name">
-                                <p>Roger Scott</p>
-                                <span>Marketing Manager</span>
+                                <p>Ava Megan</p>
+                                <span>Entrepreneur</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-12">
                     <div class="testiomanials">
                         <div class="icon">
                             <i class="fas fa-quote-left"></i>
                         </div>
                         <div class="text">
-                            <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and
-                                Consonantia, there live the blind texts.</p>
+                            <p class="mb-4">Among the drinks I drank for a long time, I did not drink it.</p>
                         </div>
                         <div class="user">
                             <div class="profile imgbox"
-                                style="background-image: url(https://technext.github.io/liquorstore/images/person_1.jpg);">
+                                style="background-image: url(https://www.elitesingles.co.uk/wp-content/uploads/sites/59/2019/11/2b_en_articleslide_sm2-350x264.jpg);">
 
                             </div>
                             <div class="name">
-                                <p>Roger Scott</p>
-                                <span>Marketing Manager</span>
+                                <p>Oscar Rhys</p>
+                                <span>Doctor</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-12">
                     <div class="testiomanials">
                         <div class="icon">
                             <i class="fas fa-quote-left"></i>
                         </div>
                         <div class="text">
-                            <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and
-                                Consonantia, there live the blind texts.</p>
+                            <p class="mb-4">If you want to meet a different taste in drinks, be sure to apply.</p>
                         </div>
                         <div class="user">
                             <div class="profile imgbox"
-                                style="background-image: url(https://technext.github.io/liquorstore/images/person_1.jpg);">
+                                style="background-image: url(https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg);">
 
                             </div>
                             <div class="name">
-                                <p>Roger Scott</p>
-                                <span>Marketing Manager</span>
+                                <p>Oliver Jack</p>
+                                <span>Journalist</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-12">
                     <div class="testiomanials">
                         <div class="icon">
                             <i class="fas fa-quote-left"></i>
                         </div>
                         <div class="text">
-                            <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and
-                                Consonantia, there live the blind texts.</p>
+                            <p class="mb-4">I am sure that I will cooperate with you once again.</p>
                         </div>
                         <div class="user">
                             <div class="profile imgbox"
-                                style="background-image: url(https://technext.github.io/liquorstore/images/person_1.jpg);">
+                                style="background-image: url(https://skipass.fr/p/users/406482/profile-6337-3.jpg);">
 
                             </div>
                             <div class="name">
-                                <p>Roger Scott</p>
-                                <span>Marketing Manager</span>
+                                <p>Jack Connor</p>
+                                <span>Designer</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-12">
                     <div class="testiomanials">
                         <div class="icon">
                             <i class="fas fa-quote-left"></i>
                         </div>
                         <div class="text">
-                            <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and
-                                Consonantia, there live the blind texts.</p>
+                            <p class="mb-4">I encountered a truly irreplaceable taste.See you.</p>
                         </div>
                         <div class="user">
                             <div class="profile imgbox"
-                                style="background-image: url(https://technext.github.io/liquorstore/images/person_1.jpg);">
+                                style="background-image: url(https://d2az3zd39o5d63.cloudfront.net/linkedin-profile-picture-squinch.jpg);">
 
                             </div>
                             <div class="name">
-                                <p>Roger Scott</p>
-                                <span>Marketing Manager</span>
+                                <p>Emily Elizabeth</p>
+                                <span>Teacher</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-12">
                     <div class="testiomanials">
                         <div class="icon">
                             <i class="fas fa-quote-left"></i>
                         </div>
                         <div class="text">
-                            <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and
-                                Consonantia, there live the blind texts.</p>
+                            <p class="mb-4">I advise everyone, you are unprofessional in your work.</p>
                         </div>
                         <div class="user">
                             <div class="profile imgbox"
@@ -291,8 +552,8 @@
 
                             </div>
                             <div class="name">
-                                <p>Roger Scott</p>
-                                <span>Marketing Manager</span>
+                                <p>Thomas Joe </p>
+                                <span>Dentist</span>
                             </div>
                         </div>
                     </div>
@@ -300,107 +561,19 @@
             </div>
         </div>
     </section>
-    <section id="statistic">
+    <section id="information">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="box">
-                        <span>3,000</span>
-                        <div class="text">
-                            <p>Məmnun müştərilərimiz</p>
-                        </div>
-                    </div>
+            <div class="right d-flex flex-column align-items-center">
+                <div class="security">
+                    <span>© Bütün hüquqları <p>Grist</p> tərəfindən qorunur.</span>
                 </div>
-                <div class="col-md-3">
-                    <div class="box">
-                        <span>15</span>
-                        <div class="text">
-                            <p>İLLƏRİN TƏCRÜBƏSİ</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="box">
-                        <span>100</span>
-                        <div class="text">
-                            <p>İKOR NÖVLƏRİ</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="box">
-                        <span>1</span>
-                        <div class="text">
-                            <p>Filiallarımız</p>
-                        </div>
-                    </div>
+                <div class="info">
+                    <span>Designed by <a href="https://instagram.com/t_turxan?utm_medium=copy_link">T.Turxan,
+                            Ə.Ilkin,S.Teymur, M.Iqbal</a></span>
                 </div>
             </div>
         </div>
     </section>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-9">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="head-tittle">
-                                <a href="#">
-                                    <h3>Alkoteka</h3>
-                                </a>
-                            </div>
-                            <span>Far far away, behind the word mountains, far from the countries.</span>
-                            <div class="contacts">
-                                <a href="#"> <i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="box">
-                                <h4>Hesablarım</h4>
-                                <ul>
-                                    <li><i class="fas fa-angle-right"></i>Mənim Hesabım</li>
-                                    <li><i class="fas fa-angle-right"></i>Qeydiyyatdan keçin</li>
-                                    <li><i class="fas fa-angle-right"></i>Daxil ol</li>
-                                    <li><i class="fas fa-angle-right"></i>Mənim sifarişim</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="box">
-                                <h4>Məlumat</h4>
-                                <ul>
-                                    <li><i class="fas fa-angle-right"></i> <a href="Haqqımızda.html">Bizim haqqımızda</a></li>
-                                    <li><i class="fas fa-angle-right"></i><a href="Kataloq.html">Kataloq</a></li>
-                                    <li><i class="fas fa-angle-right"></i><a href="contact.html">Bizimlə əlaqə saxlayın</a></li>
-                                    <li><i class="fas fa-angle-right"></i><a href="index.html">Müddət və Şərtlər</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="box">
-                        <h4>Sualınız var?</h4>
-                        <div class="map">
-                            <i class="fas fa-map"></i>
-                            <p> 203 Fake St. Mountain View, San Francisco, California, USA</p>
-                        </div>
-                        <div class="phone">
-                            <i class="fas fa-phone"></i>
-                            <p>+994513361551</p>
-                        </div>
-                        <div class="instagram">
-                            <i class="fab fa-instagram"></i>
-                            <p>alkotekaz</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="app.js"></script>
     <script src="app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
@@ -408,8 +581,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://smtpjs.com/v3/smtp.js">
-        </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
 </body>
 
 </html>
